@@ -12,7 +12,3 @@ export const upperCamelCase = (item: string) => {
   const firstLetter = `${camelized[0].toUpperCase()}`;
   return `${firstLetter}${camelized.slice(1)}`;
 };
-
-export const env = (key: string) => {
-  return process.env[key];
-};
