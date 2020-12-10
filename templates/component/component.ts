@@ -5,5 +5,5 @@ export interface {{upperCamelCase componentName}}Props {
 }
 
 export const {{upperCamelCase componentName}} = ({ prop }: {{upperCamelCase componentName}}Props) => {
-  return <div/>
+  return <div></div>
 };

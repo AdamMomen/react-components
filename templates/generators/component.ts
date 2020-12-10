@@ -2,7 +2,7 @@ import path from 'path'
 
 export const createComponentGenerator = () => {
   return {
-    description: 'Creates a component with a storybook file',
+    description: 'Creates a component with a storybook file and tests folder',
     prompts: [
       {
         type: 'input',

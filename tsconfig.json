@@ -10,6 +10,7 @@
     "strict": false, // Strict type checking
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "type":"module",
     "paths": {
       "*": [
         "*",
@@ -23,12 +24,13 @@
     }
   },
   "includes": [
-    "./types/**/*.d.ts"
+    "./types/**/*.d.ts",
+    "./plopfile.ts"
   ],
   "exclude": [
     "node_modules",
     "**/node_modules/*",
     ".storybook",
-    "./templates/components"
+    "templates/component/*.ts"
   ]
 }
