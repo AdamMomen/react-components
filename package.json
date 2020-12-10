@@ -24,7 +24,7 @@
         "deploy": "gh-pages -d example/build",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "plop": "plop"
+        "chromatic": "npx chromatic"
     },
     "peerDependencies": {
         "react": "^16.0.0"
@@ -36,9 +36,9 @@
         "@storybook/addon-essentials": "^6.0.26",
         "@storybook/addon-links": "^6.0.26",
         "@storybook/react": "^6.0.26",
-        "@testing-library/react": "^11.2.2",
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.1.0",
+        "chromatic": "^5.4.0",
         "cross-env": "^7.0.2",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.7.0",
@@ -53,7 +53,6 @@
         "gh-pages": "^2.2.0",
         "microbundle-crl": "^0.13.10",
         "npm-run-all": "^4.1.5",
-        "plop": "^2.7.4",
         "prettier": "^2.0.4",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
