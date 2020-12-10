@@ -28,7 +28,7 @@
     "node_modules",
     "**/node_modules/*",
     ".storybook",
-    "templates/component/*"
+    "**/templates/component/*"
   ],
   "include": [
     "src"
