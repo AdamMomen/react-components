@@ -1,10 +1,14 @@
 import { NodePlopAPI } from 'plop';
-import { createComponentGenerator } from './templates/generators/component';
-import { upperCamelCase } from './templates/helpers';
+const  { createComponentGenerator }  = require('./templates/generators/component') ;
+const  { upperCamelCase}  = require('./templates/helpers') ;
 
-export default function (plop: NodePlopAPI) {
+// export default function(plop: NodePlopAPI) {
+
+// }
+module.exports = function (plop: NodePlopAPI) {
+	// controller generator
 
   plop.setHelper('upperCamelCase', upperCamelCase);
 
   plop.setGenerator('component', createComponentGenerator());
-}
+};
