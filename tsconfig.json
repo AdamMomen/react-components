@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "module": "esNext",
+    "module": "commonjs",
     "target": "esNext",
     "baseUrl": ".",
     "moduleResolution": "node",
@@ -31,7 +31,5 @@
   ],
   "include": [
     "src",
-    "./plopfile.ts",
-    "./templates/**/*",
   ]
 }

@@ -20,29 +20,33 @@ export const createComponentGenerator = () => {
         type: 'directory',
         name: 'path',
         message:
-          'What directory do you want your file in? (e.g. common/components)',
+          'What directory do you want your file in? (e.g. components)',
         basePath: path.join(process.cwd(), 'src')
       }
     ],
     actions: [
       {
         type: 'add',
-        path: `${process.cwd()}/src/{{path}}/{{dashCase componentName}}/index.ts`,
+        path: `${process.cwd()}/src/{{path}}/{{dashCase omponentName}}/index.ts`,
         templateFile: './templates/component/index.ts'
       },
       {
         type: 'add',
-        path: `${process.cwd()}/src/{{path}}/{{dashCase componentName}}/{{dashCase componentName}}.tsx`,
+        path: `${process.cwd()}/src/{{path}}/{{upperCamelCase componentName}}/{{upperCamelCase componentName}}.tsx`,
         templateFile: './templates/component/component.ts'
       },
       {
         type: 'add',
-        path: `${process.cwd()}/src/{{path}}/{{dashCase componentName}}/tests/{{dashCase componentName}}.test.tsx`,
+        path: `${process.cwd()}/src/{{path}}/{{upperCamelCase componentName}}/{{upperCamelCase componentName}}.test.tsx`,
         templateFile: './templates/component/test.ts'
       },
       {
         type: 'add',
-        path: `${process.cwd()}/src/{{path}}/{{dashCase componentName}}/{{dashCase componentName}}.stories.tsx`,
+        path: `${process.cwd()}/src/{{path}}/{{upperCamelCase componentName}}/tests/{{dashCase componentName}}.css`,
+      },
+      {
+        type: 'add',
+        path: `${process.cwd()}/src/{{path}}/{{upperCamelCase componentName}}/{{dashCase componentName}}.stories.tsx`,
         templateFile: './templates/component/stories.ts'
       }
     ]
